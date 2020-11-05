@@ -1,1 +1,2 @@
-# Web_Development_Mini_Project
+# Web Development Mini-Project: Quotes Website
+----------------------------------------------

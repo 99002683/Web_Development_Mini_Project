@@ -11,7 +11,7 @@ var cors = function(req, res, next)
 
 app.use(cors);
 
-//http://localhost:3000/showBooks
+//http://localhost:3000/showQuotes
 app.get("/showQuotes",function(req,res){
     res.status(200).send(quoteList);
 })

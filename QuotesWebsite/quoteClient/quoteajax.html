@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script src="https://code.jquery.com/jquery-2.2.3.min.js">
+ </script>
+ <script>
+    $(document).ready(function(){
+    $('#showquotes').click(function(){
+        var url = 'http://localhost:3000/showQuotes';
+        $.get(url,function(data,status){
+            data.forEach(quote => {
+                var str ='';
+                for(const prop in quote){
+                    str+= prop+' '+quote[prop]+' '+'<br>';
+                }    
+                $('#mydiv').append(str).append('<br>');
+            });
+        })
+    });
+     })
+ </script>
+</head>
+<body>
+    <button id="showquotes">Show Quotes</button><br>
+    <input type="text" id="author">
+    <button id="showauthor">Search By Author</button><br>
+    <input type="text" id="category">
+    <button id="showcategory">Search By Category</button><br>
+    <div id="mydiv"></div>
+ 
+</body>
+</html>

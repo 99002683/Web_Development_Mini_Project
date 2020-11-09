@@ -27,6 +27,17 @@ app.get("/showAuthor",function(req,res){
     res.status(200).send(newQuoteList);
 })
 
+//http://localhost:3000/showCategory?category=Life
+app.get("/showCategory",function(req,res){
+    var category = req.query.category;
+    var newQuoteList =[];
+    quoteList.forEach(quote=>{
+        if(quote.category==category)
+            newQuoteList.push(quote);
+    });
+    res.status(200).send(newQuoteList);
+})
+
 app.listen('3000',function(){
     console.log('Server listning to port 3000');
    });

@@ -58,7 +58,11 @@
                     });
                 })
             });
-        })
+    })
+    function clearBox(elementID)
+    {
+        document.getElementById(elementID).innerHTML = "";
+    }
 </script>
 
 </head>
@@ -95,11 +99,19 @@
 	<section class="background">
 	<div class="content-wrapper">
 		<div class="intro">
-			<h1><span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5">A good quote a day keeps the psychiatrist away</span>
+			<h1>
+            <span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5">A good quote a day keeps the psychiatrist away</span>
 			<span class="big wow pulse" data-wow-duration="1s" data-wow-delay="0s">QuoteSite</span><br/>
 			<span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">- An LTTS initiative... -</span>
 			</h1>
-		</div>
+        
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <h1><span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">“You've gotta dance like there's nobody watching,<br>
+                Love like you'll never be hurt,<br>
+                Sing like there's nobody listening,<br>
+                And live like it's heaven on earth.”<br></span></h1>
+            <span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5"> - William W. Purkey </span>
+        </div>
 	</div>
 	</section>
 	<section class="background">
@@ -123,19 +135,16 @@
 						<td><input type="text" id="category"></td>
 						<td><button class="button" id="showCategory"><span>Search By Category </span></button><br></td>
 					</tr>
-					<div id="mydiv"></div>
 				</table>
 				<br>
-				<br>
-				<button class="button" id="showquotes"><span>Show all quotes </span></button><br>
+                <button class="button" id="showquotes"><span>Show all quotes </span></button><br>
+                <button class="button" id="clear" onclick="clearBox('mydiv')"><span>Clear </span></button>
 				</span>
             </div>
-            <div id="mydiv"></div>
-			<div class="aboutbadge black">
-				<span> Quotes will be displayed here... </span>
-				
-			</div>
-		</div>
+        </div>
+        <div class="intro"><span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5"> Quotes will be displayed below... </span><br></div>
+		<div class="aboutbadge black" id="mydiv">...</div>
+		<!-- </div> -->
 	</div>
 	</section>
 

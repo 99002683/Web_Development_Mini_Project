@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="#">
+<title>QuoteSite</title>
+<!-- CSS -->
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300italic,300,700,700italic' rel='stylesheet' type='text/css'>
+
+<!-- SCRIPT -->
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script>
+	$(document).ready(function(){
+            $('#showquotes').click(function(){
+                var url = 'http://localhost:3000/showQuotes';
+                $.get(url,function(data,status){
+                    data.forEach(quote => {
+                        var str='';
+                        for(const prop in quote){
+                            str+=prop+' '+quote[prop]+' '+'<br>';
+                        }    
+                        $('#mydiv').append(str).append('<br>');
+                    });
+                })
+            });
+
+            $('#showAuthor').click(function(){
+                var url = 'http://localhost:3000/showAuthor';
+                var authchoice = $('#author').val();
+                $.get(url,{author:authchoice},function(data,status){
+                    data.forEach(quote => {
+                        var str='';
+                        for(const prop in quote){
+                            str+=prop+' '+quote[prop]+' '+'<br>';
+                        }
+                        $('#mydiv').append(str).append('<br>');
+                    });
+                })
+            });
+
+            $('#showCategory').click(function(){
+                var url = 'http://localhost:3000/showCategory';
+                var catchoice = $('#category').val();
+                $.get(url,{category:catchoice},function(data,status){
+                    data.forEach(quote => {
+                        var str='';
+                        for(const prop in quote){
+                            str+=prop+' '+quote[prop]+' '+'<br>';
+                        }
+                        $('#mydiv').append(str).append('<br>');
+                    });
+                })
+            });
+    })
+    function clearBox(elementID)
+    {
+        document.getElementById(elementID).innerHTML = "";
+    }
+</script>
+
+</head>
+<body class="frontpage">
+
+<div id="loader-wrapper">
+<div id="loader"></div>
+<div class="loader-section section-left"></div>
+<div class="loader-section section-right"></div>
+</div>
+
+
+<div class="menu-outer">
+    <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="blog.html">Contributors</a></li>
+       </ul>
+   </nav>
+</div>
+<a class="menu-close" onClick="return true">
+    <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</a>
+
+<div class="container">
+	<section class="background">
+	<div class="content-wrapper">
+		<div class="intro">
+			<h1>
+            <span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5">A good quote a day keeps the psychiatrist away</span>
+			<span class="big wow pulse" data-wow-duration="1s" data-wow-delay="0s">QuoteSite</span><br/>
+			<span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">- An LTTS initiative... -</span>
+			</h1>
+        
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <h1><span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">“You've gotta dance like there's nobody watching,<br>
+                Love like you'll never be hurt,<br>
+                Sing like there's nobody listening,<br>
+                And live like it's heaven on earth.”<br></span></h1>
+            <span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5"> - William W. Purkey </span>
+        </div>
+	</div>
+	</section>
+	<section class="background">
+	<div class="content-wrapper">
+		<div class="about">
+			<div class="aboutbadge">
+				<span>
+				<br>
+				<span class="border">Search here...</span><br/>
+				<br>
+				<table cellpadding=10 cellspacing=20>
+					<tr>
+						<td><input type="text" id="author"></td>
+						<td><button class="button" id="showAuthor"><span>Search By Author </span></button><br></td>
+						<br>
+					</tr>
+					<tr>
+						<td><br></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="category"></td>
+						<td><button class="button" id="showCategory"><span>Search By Category </span></button><br></td>
+					</tr>
+				</table>
+				<br>
+                <button class="button" id="showquotes"><span>Show all quotes </span></button><br>
+                <button class="button" id="clear" onclick="clearBox('mydiv')"><span>Clear </span></button>
+				</span>
+            </div>
+        </div>
+        <div class="intro"><span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5"> Quotes will be displayed below... </span><br></div>
+		<div class="aboutbadge black" id="mydiv">...</div>
+		<!-- </div> -->
+	</div>
+	</section>
+
+</div>
+
+
+	</section>
+</div>
+
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+<script src="js/testimonials.js"></script>
+
+</body>
+</html>

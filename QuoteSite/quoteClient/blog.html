@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="#">
+<title>QuoteSite</title>
+<!-- CSS -->
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300italic,300,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body style="background-image:url(img/bg7.jpg);background-attachment:fixed;background-size:cover;">
+
+<div id="loader-wrapper">
+<div id="loader"></div>
+<div class="loader-section section-left"></div>
+<div class="loader-section section-right"></div>
+</div>
+
+<div class="menu-outer">
+    <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="blog.html">Contributors</a></li>
+       </ul>
+   </nav>
+</div>
+<a class="menu-close" onClick="return true">
+    <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</a>
+
+<div class="container">
+<div class="logoarea">
+<div class="intro">
+			<h1><span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5">A good quote a day keeps the psychiatrist away</span>
+			<span class="big wow pulse" data-wow-duration="1s" data-wow-delay="0s">QuoteSite</span>
+			<span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">- An LTTS initiative... -</span>
+			</h1>
+		</div>
+		</div>
+		<div class="pagearea">
+		<h1 class="page-headline">CONTRIBUTORS</h1>
+		<i class="iconstartitle textmagenta fa fa-star"></i>
+		<h1 class="entry-title">Subhrosil Maiti</h1><br/>
+		<p>Ps. No.:: 99002658<a href="https://github.com/99002658" class="readmore" target="_blank">GitHub Link Here...</a></p>	
+
+		<h1 class="entry-title">Nishant Raj</h1><br/>
+		<p>PS. No.:: 99002652<a href="https://github.com/99002652" class="readmore" target="_blank">GitHub Link Here...</a></p>
+
+		<h1 class="entry-title">Hasika Chelladurai</h1><br/>
+		<p>PS. No.:: 99002681<a href="#" class="readmore" target="_blank">GitHub Link Here...</a></p>
+				
+		<h1 class="entry-title">Pooja Sanjay Pol</h1><br/>
+		<p>Ps. No.:: 99002683<a href="https://github.com/99002683" class="readmore" target="_blank">GitHub Link Here...</a></p>			
+		</div>
+	
+</div>
+<div class="clearfix"></div>
+<div id="myModal" class="modal">
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <p>Contact via email:: maitisubhrosil@gmail.com</p>
+	</div>
+</div>
+<footer class="footer">
+<div class="container">
+<div class="pull-left">&copy; GENESIS, 2020</div>
+<div class="pull-right"> 
+	<div class="footericons">
+		<a href="https://github.com/99002658" target="_blank"><i class="fa fa-github"></i></a>
+		<i class="fa fa-google" id="myBtn"></i>
+		<a href="https://dev.to/subhrosilmaiti" target="_blank"><i class="fa fa-cog"></i></a>
+	</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</footer>	
+
+<!-- Scripts -->
+
+<script>
+	var modal = document.getElementById("myModal");
+	var btn = document.getElementById("myBtn");
+	var span = document.getElementsByClassName("close")[0];
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/nicescroll.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

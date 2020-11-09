@@ -1,2 +1,2 @@
-# Web Development Mini-Project: QuotesSite
+# Web Development Mini-Project: QuoteSite
 ----------------------------------------------

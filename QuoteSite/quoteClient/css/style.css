@@ -651,7 +651,7 @@ a.map {border-bottom: 1px dashed;    color: #fff;}
 }
 .pagearea a.readmore {
 	font-style: italic;
-    background-color: rgba(230, 33, 97, 0.48);
+    background-color: #e621617a;
     display: inline-block;
     color: rgb(255, 255, 255);
     padding: 5px 10px;
@@ -799,7 +799,7 @@ a.map {border-bottom: 1px dashed;    color: #fff;}
 .menu-outer:hover ~ .menu-close {
   margin-right:-100px;
 }
-.menu-outer:hover .bar {     background: rgba(145, 255, 255, 0.65); }
+.menu-outer:hover .bar {     background: rgba(224, 51, 51, 0.65); }
 .menu-inner ul {
   top:50%;
   -webkit-transform:translateY(-50%);
@@ -926,7 +926,7 @@ nav li a:hover {
   right: 100%;
   width: 200px;
   height: 200px;
-  background: #be2d5a;
+  background: #e23232;
   cursor: pointer;
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;

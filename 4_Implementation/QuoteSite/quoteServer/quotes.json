@@ -10,11 +10,19 @@
        {
               "quote":"I always find beauty in things that are odd and imperfect, they are much more interesting.",
               "author":"Marc Jacobs",
-              "category":"Beauty"
+              "category":"Beauty"},
        {
               "quote":"I think there is beauty in everything. What 'normal' people perceive as ugly, I can usually see something of beauty in it.",
               "author":"Alexander McQueen",
               "category":"Beauty"},
+       {
+              "quote":"We must never confuse elegance with snobbery.",
+              "author":"Yves Saint Laurent",
+              "category":"Elegance"},
+       {
+              "quote":"Elegance is not standing out, but being remembered." ,
+              "author":"Giorgio Armani",
+              "category":"Elegance"},
        {
               "quote":"Whatever the mind of man can conceive and believe, it can achieve.",
               "author":"Napoleon Hill",

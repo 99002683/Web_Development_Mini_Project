@@ -14,7 +14,6 @@ To ease ourselves from finding these much needed quotes/excerpts, we came up wit
 -----------------------------------------------
 Hope you enjoy using the tool that we've come up with.
 -----------------------------------------------
-|CI/CD|Code Quality|Postman|Express|
-|-----|------------|-------|-------|
-|![CI](https://github.com/99002683/Web_Development_Mini_Project/workflows/CI/badge.svg)|[![Codacy Badge](https://api.codacy.com/project/badge/Grade/654c6a54d09945c696e267bf57ae111c)](https://app.codacy.com/gh/99002683/Web_Development_Mini_Project?utm_source=github.com&utm_medium=referral&utm_content=99002683/Web_Development_Mini_Project&utm_campaign=Badge_Grade)|![Postman](https://github.com/99002683/Web_Development_Mini_Project/workflows/Postman/badge.svg?branch=main)|![Express](https://github.com/99002683/Web_Development_Mini_Project/workflows/Express/badge.svg?branch=main)|
-|![.github/workflows/selenium.yml](https://github.com/99002683/Web_Development_Mini_Project/workflows/.github/workflows/selenium.yml/badge.svg?branch=main)|
+|CI/CD|Code Quality|Postman|Express|Selenium Workflow|
+|-----|------------|-------|-------|-----------------|
+|![CI](https://github.com/99002683/Web_Development_Mini_Project/workflows/CI/badge.svg)|[![Codacy Badge](https://api.codacy.com/project/badge/Grade/654c6a54d09945c696e267bf57ae111c)](https://app.codacy.com/gh/99002683/Web_Development_Mini_Project?utm_source=github.com&utm_medium=referral&utm_content=99002683/Web_Development_Mini_Project&utm_campaign=Badge_Grade)|![Postman](https://github.com/99002683/Web_Development_Mini_Project/workflows/Postman/badge.svg?branch=main)|![Express](https://github.com/99002683/Web_Development_Mini_Project/workflows/Express/badge.svg?branch=main)|![.github/workflows/selenium.yml](https://github.com/99002683/Web_Development_Mini_Project/workflows/.github/workflows/selenium.yml/badge.svg?branch=main)|
